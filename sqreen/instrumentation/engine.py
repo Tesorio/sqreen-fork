@@ -31,7 +31,8 @@ STRATEGIES = {
     "import_hook": ImportHookStrategy,
     "DBApi2": DBApi2Strategy,
     "django": DjangoStrategy,
-    "psycopg2": Psycopg2Strategy,
+    # fork: remove this since it is conflicting with ddtrace (datadog)
+    #"psycopg2": Psycopg2Strategy,
     "flask": FlaskStrategy,
     "pyramid": PyramidStrategy,
     "wsgi": WSGIStrategy,
